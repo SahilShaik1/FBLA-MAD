@@ -39,9 +39,6 @@ class CalendarFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?): View {
-        // not necessary
-        val calendarViewModel =
-            ViewModelProvider(this).get(CalendarViewModel::class.java)
         // sets up view binding
 
         _binding = CalendarScreenBinding.inflate(inflater, container, false)
@@ -64,6 +61,7 @@ class CalendarFragment : Fragment() {
     }
 
     private fun EventChangeListener() {
+        //whenever an event is changed, a this will update it to calendar view
         val db = Firebase.firestore
         val username = GlobalVars.Companion.username
         db.collection("Users").document(username).collection("Events")

@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
     ): View {
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
-
+        //basic home page, no code is really required
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 

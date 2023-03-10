@@ -23,18 +23,12 @@ import javax.mail.*
 import javax.mail.internet.*
 
 class ForgotPasswordActivity : AppCompatActivity() {
-    private fun putIfMissing(props: Properties, key: String, value: String) {
-        if (!props.containsKey(key)) {
-            props[key] = value
-        }
-    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
+        //TODO: send emails from official emails
         val backbutton: Button = findViewById(R.id.backBtn)
-        val emailIn: EditText = findViewById(R.id.emailInput)
-        val db = Firebase.firestore
-        val confirmBtn: Button = findViewById(R.id.confirmBtn)
+        //button to send back to login page
         backbutton.setOnClickListener {
             val intent = Intent(this@ForgotPasswordActivity, LoginCode::class.java)
             startActivity(intent)

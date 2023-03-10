@@ -36,7 +36,7 @@ class MessagesFragment : Fragment() {
             textView.text = "Who do you want to message?"
         }
 
-
+        //Sends email with info provided
         _binding!!.SendEmail.setOnClickListener {
             val db = Firebase.firestore
             val recipientUserName = binding.Recipient.text.toString()

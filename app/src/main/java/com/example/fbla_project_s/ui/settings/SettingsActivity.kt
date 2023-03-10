@@ -16,7 +16,7 @@ class SettingsActivity : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
+        //autofills information and sends page to gmail
         binding.confirmBtn.setOnClickListener{
             // variables needed for email
             val email = "schoolsunited479@gmail.com"

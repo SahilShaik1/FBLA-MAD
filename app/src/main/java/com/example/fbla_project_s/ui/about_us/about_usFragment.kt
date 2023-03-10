@@ -30,7 +30,7 @@ class about_usFragment : Fragment() {
 
         val addEventViewModel =
             ViewModelProvider(this).get(About_usViewModel::class.java)
-
+        //send user to selected pages
         _binding = FragmentAboutUsBinding.inflate(inflater, container, false)
         val root: View = binding.root
         binding.instagram.setOnClickListener{

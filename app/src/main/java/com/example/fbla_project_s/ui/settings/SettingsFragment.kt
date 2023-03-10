@@ -36,6 +36,7 @@ class SettingsFragment : Fragment() {
         val db = Firebase.firestore
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        //Sends info t gmail
         binding.confirmBtn.setOnClickListener{
             val email = "schoolsunited479@gmail.com"
             val subject = "New Bug"

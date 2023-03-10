@@ -37,6 +37,7 @@ class HomeActivity2 : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_home2)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        //set more button to every page
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,

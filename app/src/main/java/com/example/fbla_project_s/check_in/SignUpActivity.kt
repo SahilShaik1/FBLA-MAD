@@ -39,7 +39,7 @@ class SignUpActivity : AppCompatActivity() {
         }
         // creates user
         binding.confirmBtn.setOnClickListener {
-
+            //get all info
             val userName = binding.usernameInput.text;
             val email = binding.emailInput.text;
             val password = binding.passwordInput.text;
@@ -54,7 +54,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this@SignUpActivity, "Password and confirm password don't match.", Toast.LENGTH_SHORT).show();
             }
             else {
-
+                //save to database
                 saveFirestore(username = userName.toString(), email = email.toString(), password = password.toString())
                 val intent1 = Intent(this@SignUpActivity, HomeActivity2::class.java);
                 startActivity(intent1)
@@ -64,6 +64,7 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
     private fun saveFirestore(username: String, email: String, password :String){
+        //easy way to save data
         val db = Firebase.firestore
         val userInfo = hashMapOf(
             "Email" to email,
