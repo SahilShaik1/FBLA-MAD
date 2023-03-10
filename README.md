@@ -40,7 +40,7 @@ Schools United is a mobile application built for Android operating systems. To u
 
 #Resources Used
 
-*Logo is from logo.com
+*Logo is from freelogomaker.com
 
 *Rest of the images are auto-generated images made by Android Studio
 
