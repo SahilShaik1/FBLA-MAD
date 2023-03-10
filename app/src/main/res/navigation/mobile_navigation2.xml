@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fbla_project_s.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.fbla_project_s.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.fbla_project_s.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.fbla_project_s.ui.calendar.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/calendar_screen" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.fbla_project_s.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_messages"
+        android:name="com.example.fbla_project_s.ui.messages.MessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/nav_addEvent"
+        android:name="com.example.fbla_project_s.ui.add_event.add_eventFragment"
+        android:label="Add Event"
+        tools:layout="@layout/fragment_add_event" />
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.fbla_project_s.ui.about_us.about_usFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

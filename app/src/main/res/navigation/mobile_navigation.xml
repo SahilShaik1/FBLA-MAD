@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fbla_project_s.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.fbla_project_s.ui.calendar.CalendarFragment"
+        tools:layout="@layout/calendar_screen" />
+
+    <fragment
+        android:id="@+id/nav_messages"
+        android:name="com.example.fbla_project_s.ui.messages.MessagesFragment"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.fbla_project_s.ui.settings.SettingsFragment"
+        android:label="Settings" />
+    <fragment
+        android:id="@+id/nav_addEvent"
+        android:name="com.example.fbla_project_s.ui.add_event.add_eventFragment"
+        tools:layout="@layout/fragment_add_event" />
+</navigation>
